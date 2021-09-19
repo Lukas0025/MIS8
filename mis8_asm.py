@@ -50,16 +50,12 @@ O_TYPES = [
 # can by edited
 #
 MACROS = {
-    'ADD A, B' :'ALU 0b000',
     'ADD A B'  :'ALU 0b000',
     'ADDTO'    :'ALU 0b000',
-    'SUB A, B' :'ALU 0b010',
     'SUB A B'  :'ALU 0b010',
     'SUBTO'    :'ALU 0b010',
-    'AND A, B' :'ALU 0b100',
     'AND A B'  :'ALU 0b100',
     'ANDTO'    :'ALU 0b100',
-    'XOR A, B' :'ALU 0b110',
     'XOR A B'  :'ALU 0b110',
     'XORTO'    :'ALU 0b110'
 }
@@ -187,12 +183,12 @@ line_num = 0
 code     = []
 for line in Lines:
 
-    line = re.sub(' +', ' ', line)
+    line = re.sub(' +', ' ', line).replace(",", "").upper()
 
     for k, v in MACROS.items():
         line = line.replace(k, v)
 
-    line      = line.replace(",", "").upper().split()
+    line      = line.split()
     line_num += 1
 
     inst = []
