@@ -1,6 +1,26 @@
 # MIS8
 Instruction set for minimalistic processors
 
+### Install ASM compilator to PC
+
+```sh
+sudo make install
+```
+
+need packages `python3` and `python3-pip`
+
+### Using ASM compilator
+
+```sh
+mis8_asm -i <inputfile> -o <outputfile> [-f <format>]
+
+-i, --infile     Input ASM file
+-o, --ofile      Output file
+-f, --format     Format of output file [HEX, BIN, TXTBIN, VHDL, BYTEARRAY] default is HEX
+```
+
+ASM description is in `ASM.md`
+
 ### Registers
 
 | BIN         | NAME     | USED AS     |
