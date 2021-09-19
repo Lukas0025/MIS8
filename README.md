@@ -54,7 +54,11 @@ Move content of register SS to register DD
 
 > RR used as unsigned index to register file
 
-Move content of register RR to BUS on AAAAAAAAAA address
+> W is one bit direction selector
+
+Move content of register RR to BUS on AAAAAAAAAA address if W is 1
+
+Move content of BUS on AAAAAAAAAA address to register RR if W is 0
 
 #### ALU
 | BIT |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
