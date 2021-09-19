@@ -89,8 +89,16 @@ Jump to inscruction on AAAAAAAAAA address. (Set PC to AAAAAAAAAA)
 
 > RR used as unsigned index to register file
 
+#### LDI
+| BIT |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     | 1   | 1   | 0   | R   | R   | X   | X   |  X  | C   | C   | C   | C   | C   | C   | C   | C   |
 
-Jump to inscruction on AAAAAAAAAA address if (RR = 0 and JZ) or (RR != 0 and JNZ). (Set PC to AAAAAAAAAA)
+> CCCCCCCC used as 8bit signed integer
+
+> RR used as unsigned index to register file
+
+Set CCCCCCCC number to RR register
 
 #### HALT
 | BIT |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
