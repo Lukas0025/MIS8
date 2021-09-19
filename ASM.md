@@ -9,7 +9,7 @@ sudo make install
 
 need packages `python3` and `python3-pip`
 
-### uninstall ASM compilator to PC
+### uninstall ASM compilator from PC
 
 ```sh
 sudo make uninstall
