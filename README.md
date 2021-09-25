@@ -40,7 +40,7 @@ ASM description is in `ASM.md`
 | ALU         | REG(D) <= ALU(REG(0), REG(1), O)  |   011   | `011R ROOO`            |
 | JMP         | PC <= A                           |   100   | `100X XXAA AAAA AAAA`  |
 | JZ/JNZ      | PC <= if REG(R) == 0 (I=1 -> not) |   101   | `101R RIAA AAAA AAAA`  |
-| LDI         | REG(D) <= C                       |   110   | `110R RXXX CCCC CCCC`  |
+| LDI         | REG(R) <= C                       |   110   | `110R RXXX CCCC CCCC`  |
 | HALT        | PC <= PC                          |   111   | `111X XXXX`            |
 
 ### Instructions
